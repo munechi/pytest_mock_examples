@@ -1,0 +1,21 @@
+[project]
+name = "hogelib"
+version = "0.1.0"
+description = "pytest mock examples"
+readme = "README.md"
+authors = [
+    { name = "Munechi" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.9.22,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.2",
+    "pytest-mock>=3.15.1",
+]
